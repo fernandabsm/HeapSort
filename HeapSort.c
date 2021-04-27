@@ -39,10 +39,6 @@ void Heap_Sort(char* A, int n)
 {
 	int aux, size = n, i;
 	Build_Max_Heap(A, n);
-	for (int i = 1; i <= 12; i++)
-	{
-		printf("%c ", A[i]);
-	}
 	for (i = 1; i <= n - 1; i++)
 	{
 		aux = A[1];
@@ -69,8 +65,4 @@ int main()
 	A[11] = 'L';
 	A[12] = 'O';
 	Heap_Sort(A, 12);
-	/*for (int i = 1; i <= 12; i++)
-	{
-		printf("%c ", A[i]);
-	}*/
 }
